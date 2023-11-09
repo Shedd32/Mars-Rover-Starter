@@ -11,9 +11,10 @@ describe("Command class", function() {
 
   it("Constructor sets command type", function(){
   });
-  it("constructor sets a value passed in as the 2nd argument", function(){
 
+  it("constructor sets a value passed in as the 2nd argument", function(){
   });
+  
 });
 
   
