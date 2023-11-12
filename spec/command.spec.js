@@ -10,9 +10,15 @@ describe("Command class", function() {
   });
 
   it("Constructor sets command type", function(){
+    let modeChange = new Command('MODE_CHANGE')
+    expect(modeChange).toBeInstanceOf(Command)
+    expect(modeChange.commandType).toEqual('MODE_CHANGE')
   });
 
   it("constructor sets a value passed in as the 2nd argument", function(){
+    let lowPower = new Command('MODE_CHANGE','LOW_POWER')
+    expect(lowPower).toBeInstanceOf(Command)
+    expect(lowPower.value).toEqual('LOW_POWER')
   });
   
 });
